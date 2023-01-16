@@ -28,6 +28,12 @@
     float: right;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;    
+}
+
 @media screen and (max-width: 500px){
     .navbar li {
         width: 100%;
