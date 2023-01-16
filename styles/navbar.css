@@ -28,8 +28,51 @@
     float: right;
 }
 
-@media screen and (max-width: 500px){
-    .navbar li {
+.dropdown {
+    overflow: hidden;
+    float: left;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 38px;
+    width: 25%;
+    z-index: 1;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    float: none;
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: lightsteelblue;
+}
+
+.dropdown:hover li a {
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+ @media screen and (max-width: 500px){
+    
+    .navbar li, .dropdown {
         width: 100%;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        text-align: center;
     }
 }

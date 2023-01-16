@@ -28,8 +28,15 @@
 
     <!-- Navigation Bar -->
     <div class="sticky-div">
-           <ul  class="navbar">
-        <li><a href="home.html">Home</a></li>
+        <ul  class="navbar">
+        <div class="dropdown">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown-content">
+                <a href="#introduction">Introduction</a>
+                <a href="#vision">Vision</a>
+            </div>
+        </div>
+
         <li><a href="journal.html">Journal</a></li>
         <li><a href="taxonomie.html">Taxonomie</a></li>
         <li id="navbarAbout"><a href="about.html">About</a></li>
@@ -40,7 +47,7 @@
     <!-- Main Content -------------------------------------------------------------->
     <!-- Introduction -->
     <section>
-        <div class="article" class="clearfix">
+        <div id="introduction" class="article" class="clearfix">
             <h2>Introduction</h2>
             <p> 
             Also this website is first time implemented for
@@ -62,7 +69,7 @@
             </div>
         </div>
 
-        <div class="article">
+        <div id="vision" class="article">
             <h2>Vision</h2>
             <p>
                 Here is the Idea. Developing an tool to gain knowledge
