@@ -20,16 +20,22 @@ body {
     padding: 0;
 }
 
-#article {
+.article {
     background-color: lightsteelblue;
 }
 
-#article h2, i {
+.article h2, i {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#article img:nth-child(odd) {
+.article p {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.article img:nth-child(odd) {
     width: 50%;
     max-width: 100%;
     padding: 5px;
@@ -40,10 +46,4 @@ body {
     content: "";
     display: table;
     clear: both;
-}
-
-#article p {
-    font-family: 'Courier New', Courier, monospace;
-    padding-left: 10px;
-    padding-right: 10px;
 }
