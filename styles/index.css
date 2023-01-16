@@ -36,8 +36,8 @@ body {
 }
 
 .article img:nth-child(odd) {
-    width: 50%;
-    max-width: 100%;
+    max-width: 50%;
+    max-height: 25em;
     padding: 5px;
     float: right;
 }
