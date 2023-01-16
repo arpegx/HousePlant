@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+}
+
+.navbar li {
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+    width: max-content;    
+}
+
+.navbar li a {
+    background-color: green;
+    color: white;
+}
+
+@media screen and (max-width: 400px){
+    .navbar li {
+        width: 100%;
+    }
+}
