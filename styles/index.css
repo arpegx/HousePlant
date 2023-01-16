@@ -21,6 +21,10 @@ body {
     margin: 1;
 }
 
-#introduction {
+#article {
     background-color: lightsteelblue;
+}
+
+#article p {
+    padding: 10px;
 }
