@@ -4,6 +4,10 @@ body {
     background-attachment: fixed;
     background-size: center;
     background-size: cover;
+    position: absolute;
+    width: 75vw;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #main-headline {
@@ -16,4 +20,8 @@ body {
     color: white;
     padding: 0;
     margin: 1;
+}
+
+#introduction {
+    background-color: lightsteelblue;
 }
