@@ -16,17 +16,8 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/footer.css">
 
-    <!-- Scripts -->
-    <script src="../scripts/navbar.js"></script>
-
     <!-- Adjust box-sizing to border-box for all Elements-->
-    <style> * { box-sizing: border-box; } 
-    .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;    
-}
-    </style>
+    <style> * { box-sizing: border-box; } </style>
 
 </head>
 <body>
@@ -36,30 +27,13 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div id="nav">
-        <ul  class="navbar">
+    <ul  class="navbar">
         <li><a href="home.html">Home</a></li>
         <li><a href="journal.html">Journal</a></li>
         <li><a href="taxonomie.html">Taxonomie</a></li>
         <li id="navbarAbout"><a href="about.html">About</a></li>
     </ul>
-    </div>
-
- 
-    <script>
-        window.onscroll = function() {stickyNavbar()};
-
-        var nav = document.getElementsByID("nav");
-        var sticky = nav.offsetTop;
-
-        function stickyNavbar(){
-            if (window.scrollY >= sticky){
-                nav.classList.add("sticky");
-            } else {
-                nav.classList.remove("sticky");
-            }
-        } 
-    </script>
+    
     <!-- Main Content -------------------------------------------------------------->
     <!-- Introduction -->
     <section>
