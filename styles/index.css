@@ -5,3 +5,15 @@ body {
     background-size: center;
     background-size: cover;
 }
+
+#main-headline {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#main-headline h1 {
+    color: white;
+    padding: 0;
+    margin: 1;
+}
