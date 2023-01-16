@@ -18,6 +18,12 @@
     padding: 10px 10px;
 }
 
+.navbar li a:hover {
+    background-color: lightsteelblue;
+    color: black;
+    
+}
+
 #navbarAbout {
     float: right;
 }
