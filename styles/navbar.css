@@ -18,7 +18,11 @@
     padding: 10px 10px;
 }
 
-@media screen and (max-width: 400px){
+#navbarAbout {
+    float: right;
+}
+
+@media screen and (max-width: 500px){
     .navbar li {
         width: 100%;
     }
