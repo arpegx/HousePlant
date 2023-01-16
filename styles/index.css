@@ -24,11 +24,12 @@ body {
     background-color: lightsteelblue;
 }
 
-#article h2 {
+#article h2, i {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
-#article img {
+#article img:nth-child(odd) {
     width: 50%;
     max-width: 100%;
     padding: 5px;
