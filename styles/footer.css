@@ -1,10 +1,6 @@
 footer {
-    margin-top: 10px;
+    margin: 10px 0px 10px 0px;
     background-color: lightslategrey;
-}
-
-address {
-    padding: 10px;
 }
 
 a {
@@ -12,7 +8,45 @@ a {
     text-decoration: none;
 }
 
-.contact {
-    float: right;
-    padding-right: 10px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+#contact-item {
+    justify-self: end;
+}
+
+#writtenBy-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#writtenBy-item img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+@media  screen and (max-width: 550px) {
+    #address-item, #contact-item {
+        grid-column: 2;
+        max-width: 50%;
+    }
+    #writtenBy-item {
+        grid-column: 1;
+        flex-direction: column;        
+        max-width: 50%;
+    }
+    #writtenBy-item img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
 }
