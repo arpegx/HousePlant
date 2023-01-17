@@ -2,8 +2,11 @@
 This is a Website, just for training reasons.
 
 # Sources
-    Main_Background-1.jpg
+    Font Icons :
+        https://fontawesome.com/
+
+    Main_Background-1.jpg :
         https://c1.staticflickr.com/3/2647/4132244038_76b9e6d2fe_b.jpg
 
-    monstera-obliqua-canva.jpeg
+    monstera-obliqua-canva.jpeg :
         https://www.gartendialog.de/monstera-obliqua-infos-zur-pflege/
