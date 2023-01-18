@@ -47,8 +47,3 @@ body {
     display: table;
     clear: both;
 }
-
-.sticky-div {
-    position: sticky;
-    top: 0px;
-}
