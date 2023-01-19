@@ -1,17 +1,17 @@
 :root {
-    /* Color */
+    /** Color */
     --bg-artical: lightsteelblue;
     --bg-main-headline: black;
     --color-headline: white;
     
-    /* Distance */
+    /** Distance */
     --pd-standard: 1vw;
     
-    /* Font */
+    /** Font */
     --font-article: 'Courier New', Courier, monospace;
 }
 
-/* GENERAL ----------------------------------------------------------------------*/
+/** GENERAL ----------------------------------------------------------------------*/
 * {
     box-sizing: border-box;
 }
@@ -22,7 +22,7 @@
     clear: both;
 }
 
-/* BODY ---------------------------------------------------------------------- */
+/** BODY ---------------------------------------------------------------------- */
 body {
     /* Set Background-image to cover the whole page */
     background-image: url("../src/images/Main_Background-1.jpg");
@@ -37,7 +37,7 @@ body {
     transform: translate(-50%);
 }
 
-/* HEADLINE ----------------------------------------------------------------------*/
+/** HEADLINE ----------------------------------------------------------------------*/
 #main-headline {
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@ body {
     color: var(--color-headline);
 }
 
-/* ARTICLE ----------------------------------------------------------------------*/
+/** ARTICLE ----------------------------------------------------------------------*/
 .article {
     background-color: var(--bg-artical);
 }
