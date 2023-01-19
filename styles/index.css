@@ -1,49 +1,74 @@
-body {
-    background-image: url("../src/images/Main_Background-1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: absolute;
-    width: 75vw;
-    left: 50%;
-    transform: translate(-50%);
+:root {
+    /* Color */
+    --bg-artical: lightsteelblue;
+    --bg-main-headline: black;
+    --color-headline: white;
+    
+    /* Distance */
+    --pd-standard: 1vw;
+    
+    /* Font */
+    --font-article: 'Courier New', Courier, monospace;
 }
 
-#main-headline {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-}
-
-#main-headline h1 {
-    color: white;
-    padding: 0;
-}
-
-.article {
-    background-color: lightsteelblue;
-}
-
-.article h2, i {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.article p {
-    font-family: 'Courier New', Courier, monospace;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.article img:nth-child(odd) {
-    max-width: 50%;
-    max-height: 25em;
-    padding: 5px;
-    float: right;
+/* GENERAL ----------------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
 }
 
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+/* BODY ---------------------------------------------------------------------- */
+body {
+    /* Set Background-image to cover the whole page */
+    background-image: url("../src/images/Main_Background-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /* Layout of Page, rendering and center */
+    position: absolute;
+    width: 75vw;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* HEADLINE ----------------------------------------------------------------------*/
+#main-headline {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-main-headline);
+}
+
+#main-headline h1 {
+    color: var(--color-headline);
+}
+
+/* ARTICLE ----------------------------------------------------------------------*/
+.article {
+    background-color: var(--bg-artical);
+}
+
+.article h2 {
+    padding: 0em var(--pd-standard);
+}                    
+
+.article p {
+    font-family: var(--font-article);
+    padding: 0em var(--pd-standard);
+}
+
+.article img {
+    width: 50%;
+    max-width: 300px;
+    padding: var(--pd-standard);
+    float: right;
+}
+
+.article i strong {
+    padding: 0em var(--pd-standard);
 }
