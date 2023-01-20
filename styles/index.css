@@ -2,7 +2,6 @@
     /** Color */
     --bg-artical:       lightsteelblue;
     --bg-main-headline: black;
-    --color-headline:   white;
     
     /** Distance */
     --pd-standard: 1vw;
@@ -39,11 +38,12 @@ body {
 #main-headline {
     display: flex;
     justify-content: center;
-    background-color: var(--bg-main-headline);
+    max-height: 100px;
 }
 
-#main-headline h1 {
-    color: var(--color-headline);
+#main-headline .placeholder {
+    width: calc(100% + 100px);
+    background: var(--bg-main-headline);
 }
 
 /** ARTICLE ----------------------------------------------------------------------*/
