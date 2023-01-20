@@ -42,10 +42,9 @@ body {
 }
 
 #main-headline .placeholder {
-    width: calc(100% + 100px);
+    width: 100%;
     background: var(--bg-main-headline);
 }
-
 /** ARTICLE ----------------------------------------------------------------------*/
 .article {
     background-color: var(--bg-artical);
