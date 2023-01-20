@@ -19,6 +19,7 @@
 
 /** NAVIGATION BAR -----------------------------------------------------------------*/
 .sticky-div {
+    display: flex;
     position: sticky;
     top: 0;
 }
@@ -26,6 +27,7 @@
 .navbar {
     overflow: hidden;
     list-style: none;
+    width: 100%;
     padding: 0;
     margin: 0;
     background-color: var(--navbar-color-main);
@@ -58,15 +60,14 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+    flex-direction: column;
 }
 
 .dropdown-content {
     display: none;
-
-    /* Position when it appears */
     position: absolute;
+    top: 100%;
     width: 20%;     /*TODO : improvment -> fit-content + some-space */
-    top: 100%;      /*!FIXME, wont work in vertical view*/
     background-color: var(--navbar-color-fourth);
     box-shadow: var(--navbar-shadow) var(--navbar-color-fifth);
 }
@@ -96,5 +97,9 @@
     .navbar li, .dropdown , .dropdown-content {
         width: 100%;
         text-align: center;
+        position: relative;
+    }
+    .dropdown:hover .dropdown-content{
+        display: inline-block;
     }
 }
