@@ -1,0 +1,28 @@
+:root {
+    /** Color */
+    --bg-artical:       lightsteelblue;
+    
+    /** Distance */
+    --pd-standard: 1vw;
+    
+    /** Font */
+    --font-article: 'Courier New', Courier, monospace;
+}
+
+/** ARTICLE ----------------------------------------------------------------------*/
+.article {
+    background-color: var(--bg-artical);
+    padding: 0em var(--pd-standard);
+    font-family: var(--font-article);
+}
+
+.article h2 {
+    padding: var(--pd-standard) 0em;
+}
+
+.article img {
+    width: 50%;
+    max-width: 300px;
+    padding: var(--pd-standard);
+    float: right;
+}
